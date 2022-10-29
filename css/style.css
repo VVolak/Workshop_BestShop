@@ -105,3 +105,65 @@ a {
     padding: 22px 155px;
 }
 
+.statistics {
+    margin-top: 100px;
+}
+
+.statistics-title {
+    font-size: 2.25rem;
+    font-family: var(--font-raleway);
+    text-align: center;
+}
+
+.statistics-container {
+    margin: 100px auto 120px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics-single {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-raleway)
+}
+
+.statistic-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.statistics-img {
+    position: absolute;
+}
+
+.statistics-numbers {
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.375rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.statistics-description {
+    color: var(--color-grey);
+    font-size: 1rem;
+}
+
+.statistics-single:nth-child(1) .statistic-circle {
+    background-color: var(--color-redish);
+}
+
+.statistics-single:nth-child(2) .statistic-circle {
+    background-color: var(--color-primary);
+}
+
+.statistics-single:nth-child(3) .statistic-circle {
+    background-color: var(--color-green);
+}
