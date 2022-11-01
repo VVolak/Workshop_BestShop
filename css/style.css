@@ -1,7 +1,7 @@
 :root {
     --color-primary: #08A6E4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
-    --color-redish: #FB3B64;
+    --color-primary-shadow: rgba(7, 172, 230, 0.2);
+    --color-redish: rgb(251, 59, 100);
     --color-green: #55DFB4;
     --color-black: #000000;
     --color-grey: #A5A5A5;
@@ -129,7 +129,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-raleway)
+    font-family: var(--font-raleway);
 }
 
 .statistic-circle {
@@ -335,4 +335,166 @@ a {
     height: 370px;
     padding-top: 100px;
     padding-right: 50px;
+}
+
+.pricing {
+    padding: 100px 0;
+}
+
+.pricing-title {
+    font-family: var(--font-raleway);
+    font-size: 2.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 100px;
+}
+
+.pricing-box {
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.pricing-box-professional {
+    border-color: var(--color-primary);
+}
+
+.pricing-box-premium {
+    border-color: var(--color-green);
+}
+
+.pricing-type {
+    font-family: var(--font-raleway);
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 35px 0 0 0;
+}
+
+.pricing-price {
+    font-family: var(--font-open-sans);
+    font-size: 2.875rem;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+.pricing-box-basic .pricing-price {
+    color: var(--color-redish);
+}
+
+.pricing-box-professional .pricing-price {
+    color: var(--color-primary);
+}
+
+.pricing-box-premium .pricing-price {
+    color: var(--color-green);
+}
+
+.pricing-box p {
+    font-family: var(--font-raleway);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    height: 15px;
+}
+
+.pricing-items {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.pricing-item {
+    margin-bottom: 30px;
+    font-family: var(--font-open-sans);
+    font-size: 0.875rem;
+}
+
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing-item-not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.btn-basic {
+    position: relative;
+    bottom: -28.5px;
+    font-size: 0.8125rem;
+    background-color: var(--color-redish);
+    color: white;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 23px;
+    border: none;
+    padding: 22px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn-professional {
+    position: relative;
+    bottom: -28.5px;
+    font-size: 0.8125rem;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 23px;
+    border: none;
+    padding: 22px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn-premium {
+    position: relative;
+    bottom: -28.5px;
+    font-size: 0.8125rem;
+    background-color: var(--color-green);
+    color: white;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 23px;
+    border: none;
+    padding: 22px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.pricing-box-basic:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 14px rgba(251, 59, 100, 0.2);
+}
+
+.pricing-box-professional:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.pricing-box-premium:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
 }
