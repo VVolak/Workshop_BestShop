@@ -353,7 +353,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 70px;
-    padding: 0 100px;
+    padding: 0 70px;
 }
 
 .pricing-box {
@@ -364,7 +364,6 @@ a {
     flex-direction: column;
     align-content: center;
     text-align: center;
-    margin-right: 20px;
 }
 
 .pricing-box-professional {
@@ -500,7 +499,7 @@ a {
 }
 
 .contact {
-    padding: 100px 250px 50px 250px;
+    padding: 100px 200px 50px 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -616,4 +615,32 @@ a {
     padding: 20px 97px;
     align-self: flex-end;
     margin-top: 20px;
+}
+
+.footer {
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-copy {
+    font-size: 0.6875rem;
+    line-height: 1.5rem;
+    color: var(--color-grey);
+    margin-top: 6px;
+}
+
+.socials a:first-of-type {
+    margin-right: 20px;
 }
