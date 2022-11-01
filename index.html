@@ -18,7 +18,7 @@
 <body>
 <header class="header">
     <div class="header-container container">
-        <a href="#home-page" class="logo">BestShop</a>
+        <a href="#" class="logo">BestShop</a>
         <nav>
             <ul class="header-nav">
                 <li class="header-nav-element">
@@ -121,7 +121,7 @@
     </div>
 </section>
 
-<section class="pricing">
+<section class="pricing container" id="prices">
     <h2 class="pricing-title">Pricing</h2>
 
     <div class="pricing-boxes">
@@ -168,6 +168,51 @@
             <a href="#" class="btn-premium">Begin</a>
         </div>
 
+    </div>
+</section>
+
+<section class="contact container" id="contact">
+    <div class="contact-column">
+        <h2 class="contact-title">Any questions?</h2>
+        <p class="contact-instruction">Leave your email address or call us!</p>
+        <div class="contact-details">
+            <a href="mailto:info@bestshop.xyz" class="details-item">
+                <img src="assets/Mail%20Icon.svg" alt="mail"/>
+                info@bestshop.xyz
+            </a>
+            <a href="tel:123456789" class="details-item">
+                <img src="assets/Phone%20Icon.svg" alt="phone"/>
+                123 456 789
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-column">
+        <div class="form">
+            <div class="form-field">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" class="form-input name" id="name"/>
+            </div>
+
+            <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" class="form-input email" id="email"/>
+            </div>
+            <div class="form-consent">
+                <label for="checkbox" class="form-checkbox">
+                    <input id="checkbox" type="checkbox"/>
+                    <span class="checkbox"></span>
+                </label>
+                <p class="consent-text">
+                    I hereby give consent for my personal data included in my application to be processed for the
+                    purposes of the recruitment process under the European Parliament’s and Council of the European
+                    Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the
+                    processing of personal data and on the free movement of such data, and repealing Directive
+                    95/46/EC (Data Protection Directive)
+                </p>
+            </div>
+            <button type="submit" class="btn btn-contact">Send</button>
+        </div>
     </div>
 </section>
 
