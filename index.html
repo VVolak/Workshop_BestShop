@@ -12,15 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 
 <header class="header">
     <div class="header-container container">
         <a href="#" class="logo">BestShop</a>
-        <nav>
+        <button class="header-burger">
+            <strong>Pokaż menu</strong>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-list">
             <ul class="header-nav">
                 <li class="header-nav-element">
                     <a href="#why-us" class="header-nav-link">Why us</a>
@@ -54,7 +60,7 @@
         <div class="statistics-container">
 
             <div class="statistics-single">
-                <div class="statistic-circle">
+                <div class="statistics-circle">
                     <img src="assets/Person.svg" alt="person" class="statistics-img">
                 </div>
                 <div class="statistics-numbers">100000+</div>
@@ -62,7 +68,7 @@
             </div>
 
             <div class="statistics-single">
-                <div class="statistic-circle">
+                <div class="statistics-circle">
                     <img src="assets/Eye.svg" alt="eye" class="statistics-img">
                 </div>
                 <div class="statistics-numbers">2000000+</div>
@@ -70,7 +76,7 @@
             </div>
 
             <div class="statistics-single">
-                <div class="statistic-circle">
+                <div class="statistics-circle">
                     <img src="assets/Catalog.svg" alt="catalog" class="statistics-img">
                 </div>
                 <div class="statistics-numbers">10000+</div>
@@ -128,9 +134,11 @@
     <div class="pricing-boxes">
 
         <div class="pricing-box pricing-box-basic">
-            <h3 class="pricing-type">Basic</h3>
-            <div class="pricing-price">$0</div>
-            <p></p>
+            <div class="pricing-details">
+                <h3 class="pricing-type">Basic</h3>
+                <div class="pricing-price">$0</div>
+                <p></p>
+            </div>
             <ul class="pricing-items">
                 <li class="pricing-item">100 MB HDD</li>
                 <li class="pricing-item">1 Subdomain</li>
@@ -138,13 +146,15 @@
                 <li class="pricing-item pricing-item-not">Two years license</li>
                 <li class="pricing-item pricing-item-not">Full support</li>
             </ul>
-            <a href="#" class="btn-basic">Begin</a>
+            <a href="#" class="pricing-btn btn-basic">Begin</a>
         </div>
 
         <div class="pricing-box pricing-box-professional">
-            <h3 class="pricing-type">Professional</h3>
-            <div class="pricing-price">$25</div>
-            <p>Limited offer</p>
+            <div class="pricing-details">
+                <h3 class="pricing-type">Professional</h3>
+                <div class="pricing-price">$25</div>
+                <p>Limited offer</p>
+            </div>
             <ul class="pricing-items">
                 <li class="pricing-item">500 MB HDD</li>
                 <li class="pricing-item">2 Subdomains</li>
@@ -152,13 +162,15 @@
                 <li class="pricing-item">One year license</li>
                 <li class="pricing-item pricing-item-not">Full support</li>
             </ul>
-            <a href="#" class="btn-professional">Begin</a>
+            <a href="#" class="pricing-btn btn-professional">Begin</a>
         </div>
 
         <div class="pricing-box pricing-box-premium">
-            <h3 class="pricing-type">Premium</h3>
-            <div class="pricing-price">$60</div>
-            <p>Limited offer</p>
+            <div class="pricing-details">
+                <h3 class="pricing-type">Premium</h3>
+                <div class="pricing-price">$60</div>
+                <p>Limited offer</p>
+            </div>
             <ul class="pricing-items">
                 <li class="pricing-item">2 GB HDD</li>
                 <li class="pricing-item">5 Subdomains</li>
@@ -166,7 +178,7 @@
                 <li class="pricing-item">Two years license</li>
                 <li class="pricing-item">Full support</li>
             </ul>
-            <a href="#" class="btn-premium">Begin</a>
+            <a href="#" class="pricing-btn btn-premium">Begin</a>
         </div>
 
     </div>
@@ -205,11 +217,7 @@
                     <span class="checkbox"></span>
                 </label>
                 <p class="consent-text">
-                    I hereby give consent for my personal data included in my application to<br> be processed for the
-                    purposes of the recruitment process under the<br> European Parliament’s and Council of the European
-                    Union Regulation<br> on the Protection of Natural Persons as of 27 April 2016, with regard to<br>
-                    the processing of personal data and on the free movement of such data,<br> and repealing Directive
-                    95/46/EC (Data Protection Directive)
+                    I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                 </p>
             </div>
             <button type="submit" class="btn btn-contact">Send</button>
@@ -232,3 +240,5 @@
 
 </body>
 </html>
+
+<script src="app.js"></script>

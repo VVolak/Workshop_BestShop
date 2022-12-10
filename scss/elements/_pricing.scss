@@ -1,0 +1,235 @@
+.pricing {
+  padding: 100px 0;
+
+  &-title {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 70px;
+  }
+
+  &-type {
+    font-family: $font-raleway;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 35px 0 0 0;
+  }
+
+  &-price {
+    font-family: $font-open-sans;
+    font-size: 2.875rem;
+    margin-top: 25px;
+    font-weight: 300;
+  }
+
+  &-details p {
+    font-family: $font-raleway;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    height: 15px;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-bottom: 10px;
+  }
+}
+
+.pricing-box {
+  border: 1px solid $color-redish;
+  border-radius: 18px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.pricing-box-basic .pricing-price {
+  color: $color-redish;
+}
+
+.pricing-box-professional {
+  border-color: $color-primary;
+
+  & .pricing-price {
+    color: $color-primary;
+  }
+}
+
+.pricing-box-premium {
+  border-color: $color-green;
+
+  & .pricing-price {
+    color: $color-green;
+  }
+}
+
+.pricing-item {
+  margin-bottom: 30px;
+  font-family: $font-open-sans;
+  font-size: 0.875rem;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+  }
+
+  &-not::before {
+    background-image: url("../assets/Close.svg");
+  }
+}
+
+.btn-basic {
+  background-color: $color-redish;
+}
+
+.btn-professional {
+  background-color: $color-primary;
+}
+
+.btn-premium {
+  background-color: $color-green;
+}
+
+.pricing-box-basic:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 10px 14px rgba(251, 59, 100, 0.2);
+}
+
+.pricing-box-professional:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+}
+
+.pricing-box-premium:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+}
+
+@media (max-width: 1352px) {
+  .pricing {
+    padding: 50px;
+
+    &-boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 35px;
+    }
+
+    &-box {
+      width: 100%;
+      height: 300px;
+      max-width: 500px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+      justify-content: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-details {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 30px;
+      padding-left: 50px;
+
+      & p {
+        margin-bottom: 45px;
+      }
+    }
+
+    &-items {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding-left: 50px;
+
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &-type {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing {
+    padding: 50px;
+
+    &-boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 35px;
+    }
+
+    &-box {
+      width: 100%;
+      height: 300px;
+      min-width: 300px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+      justify-content: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-details {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 30px;
+      padding-left: 10px;
+
+      & p {
+        margin-bottom: 45px;
+      }
+    }
+
+    &-items {
+      width: 50%;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding-left: 0;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &-type {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+
+  @media (min-width: 320px){
+    width: 100%;
+    padding: 0 15px;
+    scale: none;
+  }
+}
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  color: $color-primary;
+  font-weight: 300;
+}

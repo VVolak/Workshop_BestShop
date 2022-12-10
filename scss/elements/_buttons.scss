@@ -1,0 +1,44 @@
+.btn {
+  color: white;
+  font-family: $font-open-sans;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  background-color: $color-primary;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+  padding: 22px 155px;
+
+  @media (max-width: 800px){
+      margin: 0 30px;
+      padding: 20px 0;
+      display: block;
+  }
+}
+
+.pricing-btn {
+  position: relative;
+  bottom: -28.5px;
+  font-size: 0.8125rem;
+  color: white;
+  font-family: $font-open-sans;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 35px;
+  border: none;
+  padding: 22px 0;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  @media (max-width: 1352px){
+    padding: 22px 100px;
+  }
+}
+
+.btn-contact {
+  font-size: 0.8125rem;
+  padding: 20px 97px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
