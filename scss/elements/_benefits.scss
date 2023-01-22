@@ -1,159 +1,168 @@
 .benefits {
   background-color: $color-light-grey;
   padding: 100px 0;
+
+  &-container {
+    padding: 0 100px;
+  }
+
+  &-single {
+    background-color: $color-white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 35px;
+    height: 370px;
+  }
+
+  &-graph {
+    position: relative;
+
+     img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &-text {
+    max-width: 415px;
+    margin: 70px 35px;
+
+    &::after {
+      content: "";
+      width: 335px;
+      height: 4px;
+      background-color: $color-redish;
+      display: block;
+      margin-top: 50px;
+    }
+  }
+
+  &-text h2 {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+  }
+
+  &-text p {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+
+  &-single-macbook {
+
+    .benefits-graph {
+      margin-right: 117px;
+      margin-bottom: 38px;
+    }
+
+    .benefits-graph::before {
+      content: "";
+      width: 180px;
+      height: 180px;
+      background-color: $color-redish;
+      display: block;
+      border-radius: 40px;
+      position: absolute;
+      right: 0;
+      top: -40px;
+      transform: rotate(45deg);
+    }
+
+    .benefits-graph img {
+      width: 386px;
+      height: auto;
+    }
+  }
+
+  &-single-iphone {
+    .benefits-text {
+      margin: 70px 0;
+    }
+
+    .benefits-text::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &-single-iphone {
+    flex-direction: row-reverse;
+    padding: 0 20px 0 70px;
+  }
+
+  &-single-iphone {
+
+    .benefits-graph {
+      margin-right: 117px;
+      margin-bottom: 38px;
+    }
+
+    .benefits-graph::before {
+      content: "";
+      width: 320px;
+      height: 320px;
+      background-color: $color-primary;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: -15px;
+    }
+
+    .benefits-graph img {
+      width: 386px;
+      height: auto;
+    }
+  }
+
+  &-single-solo .benefits-text::after {
+    background-color: $color-green;
+  }
+
+  &-double .benefits-text::after {
+    background-color: $color-green;
+  }
+
+  &-double {
+    display: flex;
+  }
+
+  &-double > div {
+    margin-bottom: 0;
+  }
+
+  &-single-solo {
+    width: 620px;
+
+    .benefits-text {
+      max-width: none;
+      margin: 70px 35px;
+    }
+  }
+
+  &-single-graph {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-green;
+    margin-left: 60px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+  }
+
+  &-single-graph img {
+    width: 440px;
+    height: 370px;
+    padding-top: 100px;
+    padding-right: 50px;
+  }
 }
 
-.benefits-container {
-  padding: 0 100px;
-}
-
-.benefits-single {
-  background-color: $color-white;
-  border: 1px solid #E8E9ED;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 35px;
-  height: 370px;
-}
-
-.benefits-text {
-  max-width: 415px;
-  margin: 70px 35px;
-}
-
-.benefits-text::after {
-  content: "";
-  width: 335px;
-  height: 4px;
-  background-color: $color-redish;
-  display: block;
-  margin-top: 50px;
-}
-
-.benefits-text h2 {
-  font-family: $font-raleway;
-  font-size: 2.25rem;
-  margin-bottom: 30px;
-}
-
-.benefits-text p {
-  font-family: $font-open-sans;
-  font-size: 1rem;
-  margin-bottom: 50px;
-  line-height: 22px;
-}
-
-.benefits-graph {
-  position: relative;
-}
-
-.benefits-graph img {
-  position: relative;
-  z-index: 2;
-}
-
-.benefits-single-macbook .benefits-graph {
-  margin-right: 117px;
-  margin-bottom: 38px;
-}
-
-.benefits-single-macbook .benefits-graph::before {
-  content: "";
-  width: 180px;
-  height: 180px;
-  background-color: $color-redish;
-  display: block;
-  border-radius: 40px;
-  position: absolute;
-  right: 0;
-  top: -40px;
-  transform: rotate(45deg);
-}
-
-.benefits-single-macbook .benefits-graph img {
-  width: 386px;
-  height: auto;
-}
-
-.benefits-single-iphone .benefits-text {
-  margin: 70px 0;
-}
-
-.benefits-single-iphone .benefits-text::after {
-  background-color: $color-primary;
-}
-
-.benefits-single-iphone {
-  flex-direction: row-reverse;
-  padding: 0 20px 0 70px;
-}
-
-.benefits-single-iphone .benefits-graph {
-  margin-right: 117px;
-  margin-bottom: 38px;
-}
-
-.benefits-single-iphone .benefits-graph::before {
-  content: "";
-  width: 320px;
-  height: 320px;
-  background-color: $color-primary;
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: -15px;
-}
-
-.benefits-single-iphone .benefits-graph img {
-  width: 386px;
-  height: auto;
-}
-
-.benefits-single-solo .benefits-text::after {
-  background-color: $color-green;
-}
-
-.benefits-double .benefits-text::after {
-  background-color: $color-green;
-}
-
-.benefits-double {
-  display: flex;
-}
-
-.benefits-double > div {
-  margin-bottom: 0;
-}
-
-.benefits-single-solo {
-  width: 620px;
-}
-
-.benefits-single-solo .benefits-text {
-  max-width: none;
-  margin: 70px 35px;
-}
-
-.benefits-single-graph {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $color-green;
-  margin-left: 60px;
-  border: 1px solid #E8E9ED;
-  border-radius: 5px;
-}
-
-.benefits-single-graph img {
-  width: 440px;
-  height: 370px;
-  padding-top: 100px;
-  padding-right: 50px;
-}
 
 @media (max-width: 1200px) {
   .benefits {
@@ -167,22 +176,72 @@
       flex-direction: column-reverse;
       align-items: center;
       padding: 0 20px;
+      height: auto;
     }
-  }
 
-  .benefits-double {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-white;
-    border-radius: 5px;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 35px;
-    height: 370px;
-    padding: 50px;
-  }
+    &-text {
+      margin: 0 0 50px;
+    }
 
-  .benefits-single-solo {
-    width: 100%;
+    &-text::after {
+      margin-top: 20px;
+    }
+
+    &-single-macbook {
+
+      .benefits-graph {
+        margin: 60px 0 20px;
+      }
+
+      .benefits-graph::before {
+        width: 90px;
+        height: 90px;
+        right: -10px;
+        top: -30px;
+      }
+
+      .benefits-graph img {
+        width: 192px;
+      }
+    }
+
+    &-single-iphone {
+      padding: 0 30px;
+
+      .benefits-text {
+        margin: 0 0 50px;
+      }
+
+      .benefits-graph {
+        margin: 50px 0 20px;
+      }
+
+      .benefits-graph::before {
+        width: 131px;
+        height: 131px;
+        top: -15px;
+      }
+
+      .benefits-graph img {
+        width: 175px;
+      }
+    }
+
+    &-double {
+      flex-direction: column;
+    }
+
+    &-single-solo {
+      width: auto;
+      padding: 0 30px;
+    }
+
+    &-single-graph {
+      margin: 0;
+    }
+
+    &-single-solo .benefits-text {
+      max-width: 415px;
+    }
   }
 }

@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5cdb4cf0-0c59-4d5a-96af-302d9ebcafe9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_benefits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_opening.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_pricing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/elements/_statistics.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/generic/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/settings/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/settings/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/settings/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/settings/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/settings/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/elements/_benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/_benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/settings/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +44,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/Desktop/CodersLab/WAR_FER_W_41_Sass_RWD_Egzamin_Probny",
+    "last_opened_file_path": "/Users/Kasia/repositories/Workshop_BestShop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -88,6 +80,7 @@
       <workItem from="1669546478967" duration="10508000" />
       <workItem from="1669557351815" duration="11119000" />
       <workItem from="1669669990026" duration="346000" />
+      <workItem from="1674392813371" duration="13022000" />
     </task>
     <servers />
   </component>
